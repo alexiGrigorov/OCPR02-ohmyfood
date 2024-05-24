@@ -1,0 +1,20 @@
+{
+  "name": "ocpr02-ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet OC #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch sass:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexiGrigorov/OCPR02-ohmyfood.git"
+  },
+  "author": "Alexi GRIGOROV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexiGrigorov/OCPR02-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/alexiGrigorov/OCPR02-ohmyfood#readme"
+}
