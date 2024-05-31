@@ -1,0 +1,47 @@
+:root {
+  // neutrals
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #f6f6f6;
+  --clr-neutral-300: #eaeaea;
+  --clr-neutral-500: #7e7e7e;
+  --clr-neutral-700: #353535;
+  --clr-neutral-900: #000000;
+
+  // brand
+
+  --clr-scheme-1: #9356dc;
+  --clr-scheme-2: #ff79da;
+  --clr-scheme-3: #99e2d0;
+  --clr-scheme-4: #008766;
+
+  // semantic colors
+
+  --clr-primary-gradient-400: linear-gradient(
+    180deg,
+    var(--clr-scheme-1) 0%,
+    --clr-scheme-2 100%
+  );
+  --clr-primary-gradient-700: linear-gradient(
+    0deg,
+    var(--clr-scheme-1) 0%,
+    --clr-scheme-2 100%
+  );
+
+  --clr-accent-400: var(clr-scheme-3);
+  --clr-accent-700: var(--clr-scheme-1);
+
+  --clr-information-700: var(--clr-scheme-4);
+  --clr-information-400: var(clr-scheme-3);
+
+  --clr-bg-clear: var(--clr-neutral-100);
+  --clr-bg-light: var(--clr-neutral-200);
+  --clr-bg-midtone: var(--clr-neutral-300);
+  --clr-bg-dark: var(--clr-neutral-700);
+
+  --clr-txt-clear: var(--clr-neutral-900);
+  --clr-txt-radiance: var(--clr-neutral-200);
+  --clr-txt-light: var(--clr-neutral-900);
+  --clr-txt-midtone: var(--clr-neutral-700);
+  --clr-txt-dark: var(--clr-neutral-100);
+}

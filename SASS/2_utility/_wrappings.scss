@@ -1,0 +1,20 @@
+.container {
+  // --_container-size in case that there is a need to define a custom container size
+  // --_container-padding in case that there is a need to define a custom container padding
+
+  margin-block: 0;
+  margin-inline: auto;
+  max-width: var(--_container-size, calc(10 * var(--space-900)));
+  padding-inline: var(--_container-padding, var(--space-400));
+}
+
+.card {
+  box-shadow: 0 var(--space-100) var(--space-200) 0 var(--clr-neutral-800);
+  padding: var(--space-400);
+  transition: 0.3s;
+}
+
+/* On hover, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-800);
+}
