@@ -1,0 +1,17 @@
+.container {
+  margin-block: 0;
+  margin-inline: auto;
+  max-width: var(--container-size, 70rem);
+  padding-inline: var(--_flow-space, var(--space-400));
+}
+
+.card {
+  box-shadow: 0 var(--space-100) var(--space-200) 0 var(--clr-neutral-800);
+  padding: var(--space-400);
+  transition: 0.3s;
+}
+
+/* On hover, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-800);
+}

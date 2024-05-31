@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/alexiGrigorov/OCPR02-ohmyfood/issues"
   },
-  "homepage": "https://github.com/alexiGrigorov/OCPR02-ohmyfood#readme",
-  "dependencies": {
-    "utopia-core-scss": "^1.0.1"
-  }
+  "homepage": "https://github.com/alexiGrigorov/OCPR02-ohmyfood#readme"
 }

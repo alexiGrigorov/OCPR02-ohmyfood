@@ -1,4 +1,4 @@
-@use '1_composition';
-@use '2_utility';
-@use '3_block';
-@use '4_exception;
+@use '1_composition/index' as composition;
+@use '2_utility/index' as utility;
+@use '3_block/index' as block;
+@use '4_exception/index' as exception;
