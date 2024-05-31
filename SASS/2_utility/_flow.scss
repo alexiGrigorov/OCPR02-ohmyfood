@@ -1,3 +1,4 @@
 .flow > * + * {
+  // --_flow-space in case that there is a need to define a custom space
   margin-block-start: var(--_flow-space, var(--space-400));
 }

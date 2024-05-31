@@ -29,9 +29,9 @@ dd {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  font-size: var(--fs-0, 1.125rem);
-  line-height: var(--fs-2, 1.62rem);
+  min-height: 100svh;
+  font-size: var(--fs-400);
+  line-height: var(--fs-600);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -42,7 +42,7 @@ h4,
 button,
 input,
 label {
-  line-height: var(--fs-0, 1.125rem);
+  line-height: var(--fs-400);
 }
 
 /* Balance text wrapping on headings */
@@ -86,10 +86,10 @@ select {
 
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
-  min-height: calc(10 * var(--space-s, 1.125rem));
+  min-height: calc(10 * var(--space-400));
 }
 
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
-  scroll-margin-block: var(--space-l, 2.25rem);
+  scroll-margin-block: var(--space-600);
 }
