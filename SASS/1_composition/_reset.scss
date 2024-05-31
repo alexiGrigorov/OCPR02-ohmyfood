@@ -30,6 +30,7 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100svh;
+  font-family: var(--ff-sans);
   font-size: var(--fs-400);
   line-height: var(--fs-600);
 }
