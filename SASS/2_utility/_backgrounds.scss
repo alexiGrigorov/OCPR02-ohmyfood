@@ -1,0 +1,40 @@
+.bg-clear {
+  --_clr-bg: var(--clr-neutral-100);
+  --_clr-txt: var(--clr-neutral-900);
+
+  background-color: var(--_clr-bg);
+  color: var(--_clr-txt);
+}
+
+.bg-radiance {
+  --_clr-txt: var(--clr-neutral-200);
+
+  background-color: red;
+  color: var(--_clr-txt);
+}
+
+.bg-light {
+  --_clr-bg: var(--clr-neutral-200);
+  --_clr-txt: var(--clr-neutral-900);
+
+  background-color: var(--_clr-bg);
+  color: var(--_clr-txt);
+}
+
+.bg-midtone {
+  --_clr-bg: var(--clr-neutral-300);
+  --_clr-txt: var(--clr-neutral-700);
+  --_fw: var(--fw-500);
+
+  background-color: var(--_clr-bg);
+  color: var(--_clr-txt);
+  font-weight: var(--_fw);
+}
+
+.bg-dark {
+  --_clr-bg: var(--clr-neutral-700);
+  --_clr-txt: var(--clr-neutral-100);
+
+  background-color: var(--_clr-bg);
+  color: var(--_clr-txt);
+}

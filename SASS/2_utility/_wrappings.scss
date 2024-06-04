@@ -1,18 +1,36 @@
 .wrapper {
-  // --_max-width in case that there is a need to define a custom container size
-  // --_inline-padding in case that there is a need to define a custom container padding
+  --_max-wrapper-width: var(--maxWidth);
+  --_inline-wrapper-padding: var(--space-500);
 
-  width: min(var(--_max-width), 100% - (var(--_inline-padding) * 2));
+  width: min(
+    var(--_max-wrapper-width),
+    100% - (var(--_inline-wrapper-padding) * 2)
+  );
   margin-inline: auto;
 }
 
 .card {
-  box-shadow: 0 var(--space-100) var(--space-200) 0 var(--clr-neutral-800);
+  box-shadow: 0 var(--space-100) var(--space-200) 0 var(--clr-neutral-700);
   padding: var(--space-400);
   transition: 0.3s;
 }
 
 /* On hover, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-800);
+  box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-700);
+}
+
+.shadow {
+  box-shadow: 0 var(--space-100) var(--space-100)
+      color-mix(
+        in srgb,
+        var(--_clr-txt, var(--clr-neutral-900)),
+        transparent 75%
+      ),
+    0 calc(var(--space-100) * -1) var(--space-100)
+      color-mix(
+        in srgb,
+        var(--_clr-txt, var(--clr-neutral-900)),
+        transparent 75%
+      );
 }
