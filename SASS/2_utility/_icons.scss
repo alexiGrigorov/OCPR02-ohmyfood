@@ -1,0 +1,71 @@
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  display: inline-block;
+  color: inherit;
+  font-family: var(--ff-icons) !important;
+  font-size: inherit;
+  font-weight: var(--fw-regular);
+  line-height: 1;
+  speak: never;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: text-bottom;
+  margin-inline-end: var(--space-100);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gradient-400:before {
+  background-image: var(--clr-primary-gradient-400);
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-gradient-700:before {
+  background-image: var(--clr-primary-gradient-700);
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-arrow-left:before {
+  content: '\e900';
+}
+.icon-handshake-angle:before {
+  content: '\e901';
+}
+.icon-heart-solid:before {
+  content: '\e902';
+}
+.icon-heart-thin:before {
+  content: '\e903';
+}
+.icon-list-ul:before {
+  content: '\e904';
+}
+.icon-location-dot:before {
+  content: '\e905';
+}
+.icon-mobile-screen-button:before {
+  content: '\e906';
+}
+.icon-store:before {
+  content: '\e907';
+}
+.icon-utensils:before {
+  content: '\e908';
+}
+.icon-circle-check:before {
+  content: '\e909';
+}
+
+input[type='checkbox']:not(:checked) + .icon-checkbox-heart::before {
+  content: '\e903';
+}
+input[type='checkbox']:checked + .icon-checkbox-heart::before {
+  content: '\e902';
+  background-image: var(--clr-primary-gradient-400);
+  background-clip: text;
+  color: transparent;
+}

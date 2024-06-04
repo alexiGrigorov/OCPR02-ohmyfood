@@ -38,19 +38,54 @@
 
 :root {
   --clr-neutral-100: #ffffff;
-  --clr-neutral-200: #dfdfdf;
-  --clr-neutral-300: #bfbfbf;
-  --clr-neutral-400: #9f9f9f;
-  --clr-neutral-500: #808080;
-  --clr-neutral-600: #606060;
-  --clr-neutral-700: #404040;
-  --clr-neutral-800: #202020;
+  --clr-neutral-200: #f6f6f6;
+  --clr-neutral-300: #eaeaea;
+  --clr-neutral-500: #7e7e7e;
+  --clr-neutral-700: #353535;
   --clr-neutral-900: #000000;
   --clr-scheme-1: #9356dc;
-  --clr-scheme-2: #003a68;
-  --clr-scheme-3: #89c8fa;
+  --clr-scheme-2: #ff79da;
+  --clr-scheme-3: #99e2d0;
   --clr-scheme-4: #008766;
-  --clr-scheme-5: #99e2d0;
+  --clr-primary-gradient-400: linear-gradient(
+    180deg,
+    var(--clr-scheme-1) 0%,
+    var(--clr-scheme-2) 100%
+  );
+  --clr-primary-gradient-700: linear-gradient(
+    0deg,
+    var(--clr-scheme-1) 0%,
+    var(--clr-scheme-2) 100%
+  );
+  --clr-accent-400: var(clr-scheme-3);
+  --clr-accent-700: var(--clr-scheme-1);
+  --clr-information-700: var(--clr-scheme-4);
+  --clr-information-400: var(clr-scheme-3);
+  --clr-bg-clear: var(--clr-neutral-100);
+  --clr-bg-light: var(--clr-neutral-200);
+  --clr-bg-midtone: var(--clr-neutral-300);
+  --clr-bg-dark: var(--clr-neutral-700);
+  --clr-txt-clear: var(--clr-neutral-900);
+  --clr-txt-radiance: var(--clr-neutral-200);
+  --clr-txt-light: var(--clr-neutral-900);
+  --clr-txt-midtone: var(--clr-neutral-700);
+  --clr-txt-dark: var(--clr-neutral-100);
+}
+
+@font-face {
+  font-family: "OCPR02-ohmyfood";
+  src: url("../icons/fonts/OCPR02-ohmyfood.ttf?s3rnyp") format("truetype"), url("../icons/fonts/OCPR02-ohmyfood.woff?s3rnyp") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+:root {
+  --ff-sans: "Roboto", sans-serif;
+  --ff-icons: "OCPR02-ohmyfood";
+}
+
+:root {
+  --p-max-width: 65ch;
 }
 
 /* Box sizing rules */
@@ -65,6 +100,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  hanging-punctuation: first last;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -85,6 +121,7 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100svh;
+  font-family: var(--ff-sans);
   font-size: var(--fs-400);
   line-height: var(--fs-600);
 }
@@ -108,6 +145,14 @@ h4 {
   text-wrap: balance;
 }
 
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
 /* Remove default list styles on lists that have classes on them without raising specificity */
 ul:where(ul[class]),
 ol:where(ol[class]) {
@@ -124,10 +169,14 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
-  max-width: 100%;
+picture,
+svg,
+video {
   display: block;
+  max-width: 100%;
   height: auto;
+  font-style: italic;
+  shape-margin: var(--space-200);
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -149,15 +198,94 @@ textarea:not([rows]) {
   scroll-margin-block: var(--space-600);
 }
 
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  color: inherit;
+  font-family: var(--ff-icons) !important;
+  font-size: inherit;
+  font-weight: var(--fw-regular);
+  line-height: 1;
+  speak: never;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: text-bottom;
+  margin-inline-end: var(--space-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gradient-400:before {
+  background-image: var(--clr-primary-gradient-400);
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-gradient-700:before {
+  background-image: var(--clr-primary-gradient-700);
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+
+.icon-handshake-angle:before {
+  content: "\e901";
+}
+
+.icon-heart-solid:before {
+  content: "\e902";
+}
+
+.icon-heart-thin:before {
+  content: "\e903";
+}
+
+.icon-list-ul:before {
+  content: "\e904";
+}
+
+.icon-location-dot:before {
+  content: "\e905";
+}
+
+.icon-mobile-screen-button:before {
+  content: "\e906";
+}
+
+.icon-store:before {
+  content: "\e907";
+}
+
+.icon-utensils:before {
+  content: "\e908";
+}
+
+.icon-circle-check:before {
+  content: "\e909";
+}
+
+input[type=checkbox]:not(:checked) + .icon-checkbox-heart::before {
+  content: "\e903";
+}
+
+input[type=checkbox]:checked + .icon-checkbox-heart::before {
+  content: "\e902";
+  background-image: var(--clr-primary-gradient-400);
+  background-clip: text;
+  color: transparent;
+}
+
 .flow > * + * {
   margin-block-start: var(--_flow-space, var(--space-400));
 }
 
-.container {
-  margin-block: 0;
+.wrapper {
+  width: min(var(--_max-width), 100% - var(--_inline-padding) * 2);
   margin-inline: auto;
-  max-width: var(--_container-size, calc(10 * var(--space-900)));
-  padding-inline: var(--_container-padding, var(--space-400));
 }
 
 .card {
@@ -169,6 +297,10 @@ textarea:not([rows]) {
 /* On hover, add a deeper shadow */
 .card:hover {
   box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-800);
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

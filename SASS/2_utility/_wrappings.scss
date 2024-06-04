@@ -1,11 +1,9 @@
-.container {
-  // --_container-size in case that there is a need to define a custom container size
-  // --_container-padding in case that there is a need to define a custom container padding
+.wrapper {
+  // --_max-width in case that there is a need to define a custom container size
+  // --_inline-padding in case that there is a need to define a custom container padding
 
-  margin-block: 0;
+  width: min(var(--_max-width), 100% - (var(--_inline-padding) * 2));
   margin-inline: auto;
-  max-width: var(--_container-size, calc(10 * var(--space-900)));
-  padding-inline: var(--_container-padding, var(--space-400));
 }
 
 .card {

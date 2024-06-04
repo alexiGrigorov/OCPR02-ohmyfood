@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'OCPR02-ohmyfood';
+  src: url('../icons/fonts/OCPR02-ohmyfood.ttf?s3rnyp') format('truetype'),
+    url('../icons/fonts/OCPR02-ohmyfood.woff?s3rnyp') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 :root {
   --ff-sans: 'Roboto', sans-serif;
+  --ff-icons: 'OCPR02-ohmyfood';
 }
