@@ -22,9 +22,8 @@
 }
 
 .location {
-  display: flex;
-  justify-content: center;
-  padding-block: var(--space-300-400);
+  font-size: var(--fs-300);
+  padding-block: var(--space-200-300);
 
   & p::before {
     margin-inline-end: var(--space-400);
