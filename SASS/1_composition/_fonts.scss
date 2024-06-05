@@ -1,13 +1,21 @@
 @font-face {
   font-family: 'OCPR02-ohmyfood';
-  src: url('../icons/fonts/OCPR02-ohmyfood.ttf?s3rnyp') format('truetype'),
-    url('../icons/fonts/OCPR02-ohmyfood.woff?s3rnyp') format('woff');
+  src: url('../fonts/OCPR02-ohmyfood.ttf') format('truetype'),
+    url('../fonts/OCPR02-ohmyfood.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
+@font-face {
+  font-family: 'Shrikhand', serif;
+  src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --ff-sans: 'Roboto', sans-serif;
+  --ff-logo: 'Shrikhand', serif;
   --ff-icons: 'OCPR02-ohmyfood';
 }

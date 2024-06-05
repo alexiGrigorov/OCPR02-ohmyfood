@@ -1,0 +1,44 @@
+@use '../1_composition/breakpoints' as breakpoints;
+
+.main-footer {
+  padding-block-start: var(--space-500-700);
+  padding-block-end: var(--space-500);
+}
+
+.footer-content {
+  --_flex-direction: column;
+
+  & h2 {
+    width: max-content;
+    font-size: var(--fs-400);
+    font-family: var(--ff-logo);
+  }
+}
+
+.collaboration-links,
+.support-links {
+  display: flex;
+  flex-direction: column;
+
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+}
+
+@media (min-width: breakpoints.$desktop) {
+  .footer-content {
+    --_flex-direction: row;
+    --_flex-gap: var(--space-700);
+
+    justify-content: end;
+
+    & h2 {
+      order: 3;
+    }
+  }
+
+  .collaboration-links,
+  .support-links {
+    flex-direction: row;
+    gap: var(--space-400);
+  }
+}

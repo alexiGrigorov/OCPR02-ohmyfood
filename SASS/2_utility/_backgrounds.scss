@@ -2,6 +2,7 @@
 [class*=' bg-'] {
   background-color: var(--_clr-bg, red);
   color: var(--_clr-txt, red);
+  background-image: var(--_gradient);
 }
 
 .bg-clear {
@@ -29,4 +30,10 @@
 .bg-dark {
   --_clr-bg: var(--clr-neutral-700);
   --_clr-txt: var(--clr-neutral-100);
+}
+
+.bg-gradient {
+  --_clr-bg: var(--clr-primary-gradient-400);
+  --_clr-txt: var(--clr-neutral-100);
+  --_gradient: var(--gradient-primary-700);
 }

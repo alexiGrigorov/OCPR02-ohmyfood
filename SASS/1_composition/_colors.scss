@@ -17,20 +17,22 @@
 
   // semantic colors
 
-  --clr-primary-gradient-400: linear-gradient(
+  --clr-accent-400: var(--clr-scheme-3);
+  --clr-accent-700: var(--clr-scheme-1);
+
+  --clr-information-700: var(--clr-scheme-4);
+  --clr-information-400: var(--clr-scheme-3);
+
+  // gradients
+
+  --gradient-primary-400: linear-gradient(
     180deg,
     var(--clr-scheme-1) 0%,
     var(--clr-scheme-2) 100%
   );
-  --clr-primary-gradient-700: linear-gradient(
+  --gradient-primary-700: linear-gradient(
     0deg,
     var(--clr-scheme-1) 0%,
     var(--clr-scheme-2) 100%
   );
-
-  --clr-accent-400: var(clr-scheme-3);
-  --clr-accent-700: var(--clr-scheme-1);
-
-  --clr-information-700: var(--clr-scheme-4);
-  --clr-information-400: var(clr-scheme-3);
 }

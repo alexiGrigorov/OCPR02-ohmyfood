@@ -1,11 +1,35 @@
+/************
+ * Content wrapper
+ ************/
+
+.wrapper {
+  // --_max-wrapper-width: var(--maxWidth);
+  // --_inline-wrapper-padding: var(--space-500);
+
+  width: min(
+    var(--_max-wrapper-width, var(--maxWidth)),
+    100% - (var(--_inline-wrapper-padding, var(--space-500)) * 2)
+  );
+  margin-inline: auto;
+}
+
+/************
+ * Flow
+ ************/
+
 .flow > * + * {
   // --_flow-gap: var(--space-400);
 
   margin-block-start: var(--_flow-gap, var(--space-400));
 }
 
+.flow-padding > * {
+  // --_flow-gap: var(--space-400);
+
+  padding-block: var(--_flow-gap, var(--space-400));
+}
 /************
- * Flow
+ * Flex
  ************/
 
 [class^='flex-'],
@@ -16,7 +40,23 @@
   gap: var(--_flex-gap, var(--space-400));
 }
 
+.flex-wrapper {
+  // --_flex-direction: row;
+  // --_max-wrapper-width: var(--maxWidth);
+  // --_inline-wrapper-padding: var(--space-500);
+
+  flex-direction: var(--_flex-direction, row);
+  width: min(
+    var(--_max-wrapper-width, var(--maxWidth)),
+    100% - (var(--_inline-wrapper-padding, var(--space-500)) * 2)
+  );
+  margin-inline: auto;
+}
+
 .flex-center {
+  // --_flex-direction: column;
+
+  flex-direction: var(--_flex-direction, column);
   align-items: center;
   justify-content: center;
 }

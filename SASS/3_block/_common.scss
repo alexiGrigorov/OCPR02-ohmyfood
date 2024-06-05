@@ -1,4 +1,27 @@
 .section-header {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-700);
+}
+
+.main-action-button {
+  --clr-primary-gradient-400: linear-gradient(
+    180deg,
+    var(--clr-scheme-1) 0%,
+    var(--clr-scheme-2) 100%
+  );
+
+  display: inline-block;
+  padding: var(--space-200) var(--space-300);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  color: var(--_clr-txt);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border-radius: var(--space-500);
+  background-color: var(--_clr-bg);
+  background-image: var(--_gradient);
 }
