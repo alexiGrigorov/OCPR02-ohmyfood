@@ -12,7 +12,7 @@
         <a class="header-back-btn [ icon-arrow-left | ]" href="#"></a>
         <h1 class="header-logo">ohmyfood</h1>
       </nav>
-      <section class="location [ flex-center | bg-midtone | shadow ]">
+      <section class="location [ flex-center | bg-midtone ]">
         <p class="icon-location-dot">Paris, Belleville</p>
       </section>
     </header>
@@ -22,17 +22,19 @@
         <p>
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
-        <a class="main-action-button [ bg-gradient ]" href="#restaurants"
+        <a class="main-action-button [ bg-gradient | shadow ]" href="#restaurants"
           >Explorer nos restaurants</a
         >
       </section>
       <section class="concept">
-        <div class="wrapper">
+        <div class="wrapper [ flow ]">
           <h2 class="section-header">Fonctionnement</h2>
-          <ul>
-            <li>Choisissez un restaurant</li>
-            <li>Composez votre menu</li>
-            <li>Dégustez au restaurant</li>
+          <Ol class="concept-steps [ flex-center ]">
+            <div class="icon-circle-1"><li class="concept-step [ icon-mobile-screen-button | bg-light | shadow ]">
+              Choisissez un restaurant
+            </li></div>
+            <div class="icon-circle-2"><li class="concept-step [ icon-list-ul | bg-light | shadow ]">Composez votre menu</li></div>
+            <div class="icon-circle-3"><li class="concept-step [ icon-store | bg-light | shadow  ]">Dégustez au restaurant</li></div>
           </ul>
         </div>
       </section>

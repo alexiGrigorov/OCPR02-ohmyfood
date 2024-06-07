@@ -1,5 +1,7 @@
+$p-max-width: 65ch;
+
 :root {
-  --p-max-width: 65ch;
+  --p-max-width: #{$p-max-width};
 }
 
 /* Box sizing rules */

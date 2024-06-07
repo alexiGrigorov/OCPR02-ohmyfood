@@ -1,0 +1,34 @@
+@use '../../1_composition/breakpoints' as breakpoints;
+
+.concept-steps > [class^='icon-'] {
+  position: relative;
+  width: min(100%, var(--p-max-width));
+
+  &::before {
+    position: absolute;
+    color: var(--clr-accent-700);
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & > li {
+    padding-inline: var(--space-500);
+    padding-block: var(--space-400);
+    border-radius: var(--space-300);
+  }
+
+  & > li::before {
+    color: var(--clr-neutral-500);
+  }
+
+  &:last-child > li::before {
+    color: var(--clr-accent-700);
+  }
+}
+
+@media (min-width: breakpoints.$home_concept-desktop) {
+  .concept-steps {
+    --_flex-direction: row;
+  }
+}

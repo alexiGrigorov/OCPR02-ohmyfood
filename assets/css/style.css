@@ -63,7 +63,7 @@
 
 @font-face {
   font-family: "OCPR02-ohmyfood";
-  src: url("../fonts/OCPR02-ohmyfood.ttf") format("truetype"), url("../fonts/OCPR02-ohmyfood.woff") format("woff");
+  src: url("../fonts/OCPR02-ohmyfood.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -244,7 +244,7 @@ svg > path {
   color: inherit;
   font-family: var(--ff-icons) !important;
   font-size: inherit;
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-400);
   line-height: 1;
   speak: never;
   font-style: normal;
@@ -306,6 +306,18 @@ svg > path {
 
 .icon-circle-check:before {
   content: "\e909";
+}
+
+.icon-circle-1:before {
+  content: "\e910";
+}
+
+.icon-circle-2:before {
+  content: "\e911";
+}
+
+.icon-circle-3:before {
+  content: "\e912";
 }
 
 input[type=checkbox]:not(:checked) + .icon-checkbox-heart::before {
@@ -400,8 +412,7 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
 }
 
 .shadow {
-  margin-block-end: var(--space-100);
-  box-shadow: 0px var(--space-100) var(--space-100) 0px color-mix(in srgb, var(--_clr-txt, var(--clr-neutral-900)), transparent 75%), inset 0px calc(var(--space-100) / 2) var(--space-100) 0px color-mix(in srgb, var(--_clr-txt, var(--clr-neutral-900)), transparent 85%);
+  box-shadow: 0px var(--space-100) var(--space-400) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
 
 .hidden {
@@ -424,7 +435,8 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
     var(--clr-scheme-2) 100%
   );
   display: inline-block;
-  padding: var(--space-200) var(--space-300);
+  padding-inline: var(--space-400);
+  padding-block: var(--space-300);
   font-size: var(--fs-300);
   font-weight: var(--fw-500);
   color: var(--_clr-txt);
@@ -462,7 +474,9 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
 
 .location {
   padding-block: var(--space-200-300);
+  margin-block-end: calc(var(--space-100) * 0.75);
   font-size: var(--fs-300);
+  box-shadow: 0px var(--space-100) var(--space-100) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 75%), inset 0px calc(var(--space-100) / 2) var(--space-100) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
 .location p::before {
   margin-inline-end: var(--space-400);
@@ -490,7 +504,7 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   font-weight: var(--fw-500);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 854px) {
   .footer-content {
     --_flex-direction: row;
     --_flex-gap: var(--space-700);
@@ -502,6 +516,7 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   .collaboration-links,
   .support-links {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--space-400);
   }
 }
@@ -518,6 +533,34 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
 .hero p {
   font-weight: var(--fw-300);
   line-height: 1.1;
+}
+
+.concept-steps > [class^=icon-] {
+  position: relative;
+  width: min(100%, var(--p-max-width));
+}
+.concept-steps > [class^=icon-]::before {
+  position: absolute;
+  color: var(--clr-accent-700);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.concept-steps > [class^=icon-] > li {
+  padding-inline: var(--space-500);
+  padding-block: var(--space-400);
+  border-radius: var(--space-300);
+}
+.concept-steps > [class^=icon-] > li::before {
+  color: var(--clr-neutral-500);
+}
+.concept-steps > [class^=icon-]:last-child > li::before {
+  color: var(--clr-accent-700);
+}
+
+@media (min-width: 1024px) {
+  .concept-steps {
+    --_flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

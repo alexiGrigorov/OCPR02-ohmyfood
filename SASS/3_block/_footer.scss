@@ -24,7 +24,7 @@
   font-weight: var(--fw-500);
 }
 
-@media (min-width: breakpoints.$desktop) {
+@media (min-width: breakpoints.$footer-desktop) {
   .footer-content {
     --_flex-direction: row;
     --_flex-gap: var(--space-700);
@@ -39,6 +39,7 @@
   .collaboration-links,
   .support-links {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--space-400);
   }
 }
