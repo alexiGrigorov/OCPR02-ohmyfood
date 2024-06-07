@@ -61,6 +61,15 @@
   justify-content: center;
 }
 
+.flex-space-between {
+  // --_flex-direction: row;
+  --_flex-gap: normal;
+
+  flex-direction: var(--_flex-direction, row);
+  align-items: center;
+  justify-content: space-between;
+}
+
 /************
  * Grid 
  ************/
@@ -83,6 +92,15 @@
       min(var(--_min-column-width, calc(10 * var(--space-400))), 100%),
       1fr
     )
+  );
+}
+
+.test {
+  --_grid-gap: 10px;
+  gap: var(--_grid-gap);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(calc(50% - var(--_grid-gap)), 100%), 1fr)
   );
 }
 

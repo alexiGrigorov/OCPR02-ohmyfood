@@ -9,7 +9,7 @@
   <body>
     <header class="main-header [ bg-clear ]">
       <nav class="header-navigation [ wrapper ]">
-        <a class="header-back-btn [ icon-arrow-left | ]" href="#"></a>
+        <a class="header-back-btn [ icon-arrow-left | hidden ]" href="#"></a>
         <h1 class="header-logo">ohmyfood</h1>
       </nav>
       <section class="location [ flex-center | bg-midtone ]">
@@ -22,62 +22,100 @@
         <p>
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
-        <a class="main-action-button [ bg-gradient | shadow ]" href="#restaurants"
+        <a
+          class="main-action-button [ bg-gradient | shadow ]"
+          href="#restaurants"
           >Explorer nos restaurants</a
         >
       </section>
       <section class="concept">
         <div class="wrapper [ flow ]">
           <h2 class="section-header">Fonctionnement</h2>
-          <Ol class="concept-steps [ flex-center ]">
-            <div class="icon-circle-1"><li class="concept-step [ icon-mobile-screen-button | bg-light | shadow ]">
-              Choisissez un restaurant
-            </li></div>
-            <div class="icon-circle-2"><li class="concept-step [ icon-list-ul | bg-light | shadow ]">Composez votre menu</li></div>
-            <div class="icon-circle-3"><li class="concept-step [ icon-store | bg-light | shadow  ]">Dégustez au restaurant</li></div>
-          </ul>
+          <ol class="concept-steps [ flex-center ]">
+            <div class="icon-circle-1">
+              <li
+                class="concept-step [ icon-mobile-screen-button | bg-light | shadow ]"
+              >
+                Choisissez un restaurant
+              </li>
+            </div>
+            <div class="icon-circle-2">
+              <li class="concept-step [ icon-list-ul | bg-light | shadow ]">
+                Composez votre menu
+              </li>
+            </div>
+            <div class="icon-circle-3">
+              <li class="concept-step [ icon-store | bg-light | shadow ]">
+                Dégustez au restaurant
+              </li>
+            </div>
+          </ol>
         </div>
       </section>
       <section class="restaurants [ bg-light ]" id="restaurants">
-        <div class="wrapper">
+        <div class="[ wrapper | flow ]">
           <h2>Restaurants</h2>
-          <div class="feed">
-            <div class="restaurant">
-              <img src="" alt="" />
-              <div>
+          <div class="feed [ grid-even-columns ]">
+            <div class="restaurant [ bg-clear | shadow ]">
+              <div class="preview">
+                <img
+                  src="./assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash - 756.webp"
+                  alt="La palette du goût"
+                  srcset="./assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash - 756.webp 756w, ./assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash - 1008.webp 1008w,./assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash - 1512.webp 1512w,./assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash - 3024.webp 3024w"
+                />
+              </div>
+              <div class="details [ flex-space-between ]">
                 <div>
-                  <h3></h3>
-                  <p></p>
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
                 </div>
                 <input type="checkbox" />
               </div>
             </div>
-            <div class="restaurant">
-              <img src="" alt="" />
-              <div>
+            <div class="restaurant [ bg-clear | shadow ]">
+              <div class="preview">
+                <img
+                  src="./assets/images/restaurants/La_note_enchantee/stil-u2Lp8tXIcjw-unsplash - 756.webp"
+                  alt="La note enchantée"
+                  srcset="./assets/images/restaurants/La_note_enchantee/stil-u2Lp8tXIcjw-unsplash - 756.webp 756w, ./assets/images/restaurants/La_note_enchantee/stil-u2Lp8tXIcjw-unsplash - 1008.webp 1008w, ./assets/images/restaurants/La_note_enchantee/stil-u2Lp8tXIcjw-unsplash - 1512.webp 1512w, ./assets/images/restaurants/La_note_enchantee/stil-u2Lp8tXIcjw-unsplash - 3024.webp 3024w"
+                />
+              </div>
+              <div class="details [ flex-space-between | shadow ]">
                 <div>
-                  <h3></h3>
-                  <p></p>
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
                 </div>
                 <input type="checkbox" />
               </div>
             </div>
-            <div class="restaurant">
-              <img src="" alt="" />
-              <div>
+            <div class="restaurant [ bg-clear | shadow ]">
+              <div class="preview">
+                <img
+                  src="./assets/images/restaurants/A_la_française/toa-heftiba-DQKerTsQwi0-unsplash - 756.webp"
+                  alt="À la française"
+                  srcset="./assets/images/restaurants/A_la_française/toa-heftiba-DQKerTsQwi0-unsplash - 756.webp 756w, ./assets/images/restaurants/A_la_française/toa-heftiba-DQKerTsQwi0-unsplash - 1008.webp 1008w, ./assets/images/restaurants/A_la_française/toa-heftiba-DQKerTsQwi0-unsplash - 1512.webp 1512w, ./assets/images/restaurants/A_la_française/toa-heftiba-DQKerTsQwi0-unsplash - 3024.webp 3024w"
+                />
+              </div>
+              <div class="details [ flex-space-between ]">
                 <div>
-                  <h3></h3>
-                  <p></p>
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
                 </div>
                 <input type="checkbox" />
               </div>
             </div>
-            <div class="restaurant">
-              <img src="" alt="" />
-              <div>
+            <div class="restaurant [ bg-clear | shadow ]">
+              <div class="preview">
+                <img
+                  src="./assets/images/restaurants/Le_delice_des_sens/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash - 756.webp"
+                  alt="Le délice des sens"
+                  srcset="./assets/images/restaurants/Le_delice_des_sens/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash - 756.webp 756w, ./assets/images/restaurants/Le_delice_des_sens/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash - 1008.webp 1008w, ./assets/images/restaurants/Le_delice_des_sens/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash - 1512.webp 1512w, ./assets/images/restaurants/Le_delice_des_sens/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash - 3024.webp 3024w"
+                />
+              </div>
+              <div class="details [ flex-space-between ]">
                 <div>
-                  <h3></h3>
-                  <p></p>
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
                 </div>
                 <input type="checkbox" />
               </div>
