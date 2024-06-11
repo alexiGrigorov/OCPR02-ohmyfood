@@ -32,6 +32,8 @@
   --space-800-900: clamp(4.5rem, 3.4565rem + 5.2174vi, 7.5rem);
   --space-300-500: clamp(0.875rem, 0.5272rem + 1.7391vi, 1.875rem);
   --space-500-700: clamp(1.6875rem, 0.9701rem + 3.587vi, 3.75rem);
+  --space-200-600: clamp(0.5625rem, -0.1114rem + 3.3696vi, 2.5rem);
+  --space-100-800: clamp(0.3125rem, -1.3179rem + 8.1522vi, 5rem);
 }
 
 :root {

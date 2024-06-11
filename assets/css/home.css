@@ -100,8 +100,8 @@
 
 @media (min-width: 650px) {
   .feed {
-    --_grid-gap: var(--space-400);
-    --_min-column-width: calc(50% - var(--_grid-gap));
+    --_grid-gap: var(--space-200-600) var(--space-100-800);
+    --_min-column-width: calc(50% - var(--space-100-800));
   }
 }
 
