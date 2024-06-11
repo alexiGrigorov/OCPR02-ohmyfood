@@ -398,12 +398,6 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   grid-template-columns: repeat(auto-fit, minmax(min(var(--_min-column-width, calc(10 * var(--space-400))), 100%), 1fr));
 }
 
-.test {
-  --_grid-gap: 10px;
-  gap: var(--_grid-gap);
-  grid-template-columns: repeat(auto-fit, minmax(min(50% - var(--_grid-gap), 100%), 1fr));
-}
-
 @media (min-width: 50em) {
   .grid-auto-flow {
     grid-auto-flow: column;

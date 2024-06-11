@@ -5,6 +5,7 @@
 }
 
 .restaurant {
+  position: relative;
   border-radius: var(--space-400);
 
   & > .preview {
@@ -53,8 +54,20 @@
     }
 
     & label {
+      position: relative;
+      z-index: 1;
       font-size: var(--fs-500);
+      margin-inline-end: 0;
     }
+  }
+
+  & > .link-to-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: 3px solid red;
   }
 }
 
