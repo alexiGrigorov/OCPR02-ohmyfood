@@ -62,22 +62,22 @@
 }
 
 @font-face {
-  font-family: 'OCPR02-ohmyfood';
-  src: url('../fonts/OCPR02-ohmyfood.ttf') format('truetype');
+  font-family: "OCPR02-ohmyfood";
+  src: url("../fonts/OCPR02-ohmyfood.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 @font-face {
-  font-family: 'Shrikhand', serif;
-  src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
+  font-family: "Shrikhand", serif;
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 :root {
-  --ff-sans: 'Roboto', sans-serif;
-  --ff-logo: 'Shrikhand', serif;
-  --ff-icons: 'OCPR02-ohmyfood';
+  --ff-sans: "Roboto", sans-serif;
+  --ff-logo: "Shrikhand";
+  --ff-icons: "OCPR02-ohmyfood";
 }
 
 :root {
@@ -195,8 +195,8 @@ textarea:not([rows]) {
   scroll-margin-block: var(--space-600);
 }
 
-[class^='bg-'],
-[class*=' bg-'] {
+[class^=bg-],
+[class*=" bg-"] {
   background-color: var(--_clr-bg, red);
   color: var(--_clr-txt, red);
   background-image: var(--_gradient);
@@ -243,8 +243,8 @@ svg > path {
   fill: var(--_clr-txt, --clr-neutral-900);
 }
 
-[class^='icon-']::before,
-[class*=' icon-']::before {
+[class^=icon-]::before,
+[class*=" icon-"]::before {
   display: inline-block;
   color: inherit;
   font-family: var(--ff-icons) !important;
@@ -274,63 +274,63 @@ svg > path {
 }
 
 .icon-arrow-left:before {
-  content: '\e900';
+  content: "\e900";
 }
 
 .icon-handshake-angle:before {
-  content: '\e901';
+  content: "\e901";
 }
 
 .icon-heart-solid:before {
-  content: '\e902';
+  content: "\e902";
 }
 
 .icon-heart-thin:before {
-  content: '\e903';
+  content: "\e903";
 }
 
 .icon-list-ul:before {
-  content: '\e904';
+  content: "\e904";
 }
 
 .icon-location-dot:before {
-  content: '\e905';
+  content: "\e905";
 }
 
 .icon-mobile-screen-button:before {
-  content: '\e906';
+  content: "\e906";
 }
 
 .icon-store:before {
-  content: '\e907';
+  content: "\e907";
 }
 
 .icon-utensils:before {
-  content: '\e908';
+  content: "\e908";
 }
 
 .icon-circle-check:before {
-  content: '\e909';
+  content: "\e909";
 }
 
 .icon-circle-1:before {
-  content: '\e910';
+  content: "\e910";
 }
 
 .icon-circle-2:before {
-  content: '\e911';
+  content: "\e911";
 }
 
 .icon-circle-3:before {
-  content: '\e912';
+  content: "\e912";
 }
 
-input[type='checkbox']:not(:checked) + .icon-checkbox-heart::before {
-  content: '\e903';
+input[type=checkbox]:not(:checked) + .icon-checkbox-heart::before {
+  content: "\e903";
 }
 
-input[type='checkbox']:checked + .icon-checkbox-heart::before {
-  content: '\e902';
+input[type=checkbox]:checked + .icon-checkbox-heart::before {
+  content: "\e902";
   background-image: var(--gradient-primary-400);
   background-clip: text;
   color: transparent;
@@ -340,10 +340,7 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
  * Content wrapper
  ************/
 .wrapper {
-  width: min(
-    var(--_max-wrapper-width, var(--maxWidth)),
-    100% - var(--_inline-wrapper-padding, var(--space-500)) * 2
-  );
+  width: min(var(--_max-wrapper-width, var(--maxWidth)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
   margin-inline: auto;
 }
 
@@ -361,18 +358,15 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
 /************
  * Flex
  ************/
-[class^='flex-'],
-[class*=' flex-'] {
+[class^=flex-],
+[class*=" flex-"] {
   display: flex;
   gap: var(--_flex-gap, var(--space-400));
 }
 
 .flex-wrapper {
   flex-direction: var(--_flex-direction, row);
-  width: min(
-    var(--_max-wrapper-width, var(--maxWidth)),
-    100% - var(--_inline-wrapper-padding, var(--space-500)) * 2
-  );
+  width: min(var(--_max-wrapper-width, var(--maxWidth)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
   margin-inline: auto;
 }
 
@@ -392,29 +386,20 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
 /************
  * Grid 
  ************/
-[class^='grid-'],
-[class*=' grid-'] {
+[class^=grid-],
+[class*=" grid-"] {
   display: grid;
   gap: var(--_grid-gap, var(--space-400));
 }
 
 .grid-even-columns {
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      min(var(--_min-column-width, calc(10 * var(--space-400))), 100%),
-      1fr
-    )
-  );
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--_min-column-width, calc(10 * var(--space-400))), 100%), 1fr));
 }
 
 .test {
   --_grid-gap: 10px;
   gap: var(--_grid-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(50% - var(--_grid-gap), 100%), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(min(50% - var(--_grid-gap), 100%), 1fr));
 }
 
 @media (min-width: 50em) {
@@ -445,8 +430,7 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
 }
 
 .shadow {
-  box-shadow: 0px var(--space-100) var(--space-400) 0px
-    color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
+  box-shadow: 0px var(--space-100) var(--space-400) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
 
 .hidden {
@@ -510,10 +494,7 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
   padding-block: var(--space-200-300);
   margin-block-end: calc(var(--space-100) * 0.75);
   font-size: var(--fs-300);
-  box-shadow: 0px var(--space-100) var(--space-100) 0px
-      color-mix(in srgb, var(--clr-neutral-900), transparent 75%),
-    inset 0px calc(var(--space-100) / 2) var(--space-100) 0px
-      color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
+  box-shadow: 0px var(--space-100) var(--space-100) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 75%), inset 0px calc(var(--space-100) / 2) var(--space-100) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
 .location p::before {
   margin-inline-end: var(--space-400);
