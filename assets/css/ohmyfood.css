@@ -234,6 +234,11 @@ textarea:not([rows]) {
   --_gradient: var(--gradient-primary-700);
 }
 
+.bg-information {
+  --_clr-bg: var(--clr-information-400);
+  --_clr-txt: var(--clr-information-700);
+}
+
 svg > path {
   fill: var(--_clr-txt, --clr-neutral-900);
 }
@@ -326,7 +331,7 @@ input[type=checkbox]:not(:checked) + .icon-checkbox-heart::before {
 
 input[type=checkbox]:checked + .icon-checkbox-heart::before {
   content: "\e902";
-  background-image: var(--clr-primary-gradient-400);
+  background-image: var(--gradient-primary-400);
   background-clip: text;
   color: transparent;
 }
@@ -502,9 +507,11 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
 
 .footer-content {
   --_flex-direction: column;
+  --_flex-gap: normal;
 }
 .footer-content h2 {
   width: max-content;
+  margin-block-end: var(--space-400);
   font-size: var(--fs-400);
   font-family: var(--ff-logo);
 }
@@ -517,7 +524,7 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   font-weight: var(--fw-500);
 }
 
-@media (min-width: 854px) {
+@media (min-width: 860px) {
   .footer-content {
     --_flex-direction: row;
     --_flex-gap: var(--space-700);
@@ -533,93 +540,5 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
     gap: var(--space-400);
   }
 }
-.main-site {
-  --_flow-gap: var(--space-500);
-}
 
-.hero {
-  --flex-gap: var(--space-500);
-}
-.hero > * {
-  padding-inline: var(--space-500);
-}
-.hero p {
-  font-weight: var(--fw-300);
-  line-height: 1.1;
-}
-
-.concept-steps > [class^=icon-] {
-  position: relative;
-  width: min(100%, var(--p-max-width));
-}
-.concept-steps > [class^=icon-]::before {
-  position: absolute;
-  color: var(--clr-accent-700);
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.concept-steps > [class^=icon-] > li {
-  padding-inline: var(--space-500);
-  padding-block: var(--space-400);
-  border-radius: var(--space-300);
-}
-.concept-steps > [class^=icon-] > li::before {
-  color: var(--clr-neutral-500);
-}
-.concept-steps > [class^=icon-]:last-child > li::before {
-  color: var(--clr-accent-700);
-}
-
-@media (min-width: 1024px) {
-  .concept-steps {
-    --_flex-direction: row;
-  }
-}
-.feed {
-  --_min-column-width: 100%;
-}
-
-.restaurant {
-  border-radius: var(--space-400);
-}
-.restaurant > img {
-  border-radius: inherit;
-  border-end-start-radius: 0;
-  border-end-end-radius: 0;
-  object-fit: cover;
-  aspect-ratio: 2/1;
-}
-.restaurant > .preview {
-  border-radius: inherit;
-  border-end-start-radius: 0;
-  border-end-end-radius: 0;
-  aspect-ratio: 2/1;
-}
-.restaurant > .preview > img {
-  border-radius: inherit;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.restaurant > .details {
-  padding-block: var(--space-300);
-  padding-inline-start: var(--space-300);
-  padding-inline-end: var(--space-400);
-}
-.restaurant h3 {
-  font-size: var(--fs-400);
-  font-weight: var(--fw-700);
-}
-.restaurant p {
-  font-size: var(--fs-300);
-  font-weight: var(--fw-300);
-}
-
-@media (min-width: 650px) {
-  .feed {
-    --_grid-gap: var(--space-400);
-    --_min-column-width: calc(50% - var(--_grid-gap));
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ohmyfood.css.map */

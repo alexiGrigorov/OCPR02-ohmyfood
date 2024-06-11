@@ -7,9 +7,11 @@
 
 .footer-content {
   --_flex-direction: column;
+  --_flex-gap: normal;
 
   & h2 {
     width: max-content;
+    margin-block-end: var(--space-400);
     font-size: var(--fs-400);
     font-family: var(--ff-logo);
   }

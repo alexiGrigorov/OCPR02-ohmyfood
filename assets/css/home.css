@@ -1,0 +1,108 @@
+.main-site {
+  --_flow-gap: var(--space-500);
+}
+
+.hero {
+  --flex-gap: var(--space-500);
+}
+.hero > * {
+  padding-inline: var(--space-500);
+}
+.hero p {
+  font-weight: var(--fw-300);
+  line-height: 1.1;
+}
+
+.concept-steps {
+  --_grid-gap: var(--space-400);
+  --_min-column-width: 100%;
+  justify-items: center;
+}
+
+.concept-steps > [class^=icon-] {
+  position: relative;
+  width: min(var(--p-max-width) / 2, 100%);
+}
+.concept-steps > [class^=icon-]::before {
+  position: absolute;
+  color: var(--clr-accent-700);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.concept-steps > [class^=icon-] > span {
+  display: block;
+  width: 100%;
+  padding-inline: var(--space-500);
+  padding-block: var(--space-400);
+  border-radius: var(--space-300);
+}
+.concept-steps > [class^=icon-] > span::before {
+  color: var(--clr-neutral-500);
+}
+.concept-steps > [class^=icon-]:last-child > span::before {
+  color: var(--clr-accent-700);
+}
+
+@media (min-width: 1024px) {
+  .concept-steps {
+    --_min-column-width: calc(33% - 2 * var(--_grid-gap));
+  }
+}
+.feed {
+  --_min-column-width: 100%;
+}
+
+.restaurant {
+  border-radius: var(--space-400);
+}
+.restaurant > .preview {
+  position: relative;
+  border-radius: inherit;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+  aspect-ratio: 2/1;
+}
+.restaurant > .preview > img {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant > .preview > em {
+  position: absolute;
+  top: var(--space-300);
+  left: calc(100% - var(--space-300));
+  transform: translateX(-100%);
+  display: block;
+  width: max-content;
+  padding-inline: var(--space-200);
+  padding-block: var(--space-100);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-500);
+  font-style: normal;
+}
+.restaurant > .details {
+  padding-block: var(--space-300);
+  padding-inline-start: var(--space-300);
+  padding-inline-end: var(--space-400);
+}
+.restaurant > .details h3 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+}
+.restaurant > .details p {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-300);
+}
+.restaurant > .details label {
+  font-size: var(--fs-500);
+}
+
+@media (min-width: 650px) {
+  .feed {
+    --_grid-gap: var(--space-400);
+    --_min-column-width: calc(50% - var(--_grid-gap));
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

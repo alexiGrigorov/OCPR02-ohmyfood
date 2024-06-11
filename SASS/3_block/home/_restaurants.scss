@@ -7,15 +7,8 @@
 .restaurant {
   border-radius: var(--space-400);
 
-  & > img {
-    border-radius: inherit;
-    border-end-start-radius: 0;
-    border-end-end-radius: 0;
-    object-fit: cover;
-    aspect-ratio: 2 / 1;
-  }
-
   & > .preview {
+    position: relative;
     border-radius: inherit;
     border-end-start-radius: 0;
     border-end-end-radius: 0;
@@ -27,22 +20,41 @@
       width: 100%;
       object-fit: cover;
     }
+
+    & > em {
+      position: absolute;
+      top: var(--space-300);
+      left: calc(100% - var(--space-300));
+      transform: translateX(-100%);
+      display: block;
+      width: max-content;
+      padding-inline: var(--space-200);
+      padding-block: var(--space-100);
+
+      font-size: var(--fs-200);
+      font-weight: var(--fw-500);
+      font-style: normal;
+    }
   }
 
   & > .details {
     padding-block: var(--space-300);
     padding-inline-start: var(--space-300);
     padding-inline-end: var(--space-400);
-  }
 
-  & h3 {
-    font-size: var(--fs-400);
-    font-weight: var(--fw-700);
-  }
+    & h3 {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-700);
+    }
 
-  & p {
-    font-size: var(--fs-300);
-    font-weight: var(--fw-300);
+    & p {
+      font-size: var(--fs-300);
+      font-weight: var(--fw-300);
+    }
+
+    & label {
+      font-size: var(--fs-500);
+    }
   }
 }
 

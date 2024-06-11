@@ -1,8 +1,15 @@
 @use '../../1_composition/breakpoints' as breakpoints;
 
+.concept-steps {
+  --_grid-gap: var(--space-400);
+  --_min-column-width: 100%;
+
+  justify-items: center;
+}
+
 .concept-steps > [class^='icon-'] {
   position: relative;
-  width: min(100%, var(--p-max-width));
+  width: min(calc(var(--p-max-width) / 2), 100%);
 
   &::before {
     position: absolute;
@@ -12,23 +19,25 @@
     transform: translate(-50%, -50%);
   }
 
-  & > li {
+  & > span {
+    display: block;
+    width: 100%;
     padding-inline: var(--space-500);
     padding-block: var(--space-400);
     border-radius: var(--space-300);
   }
 
-  & > li::before {
+  & > span::before {
     color: var(--clr-neutral-500);
   }
 
-  &:last-child > li::before {
+  &:last-child > span::before {
     color: var(--clr-accent-700);
   }
 }
 
 @media (min-width: breakpoints.$home_concept-desktop) {
   .concept-steps {
-    --_flex-direction: row;
+    --_min-column-width: calc(33% - 2 * var(--_grid-gap));
   }
 }

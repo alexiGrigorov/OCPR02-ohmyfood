@@ -37,3 +37,8 @@
   --_clr-txt: var(--clr-neutral-100);
   --_gradient: var(--gradient-primary-700);
 }
+
+.bg-information {
+  --_clr-bg: var(--clr-information-400);
+  --_clr-txt: var(--clr-information-700);
+}
