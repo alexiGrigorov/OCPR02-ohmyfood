@@ -76,7 +76,7 @@
 }
 :root {
   --ff-sans: "Roboto", sans-serif;
-  --ff-logo: "Shrikhand";
+  --ff-logo: "Shrikhand", serif;
   --ff-icons: "OCPR02-ohmyfood";
 }
 
