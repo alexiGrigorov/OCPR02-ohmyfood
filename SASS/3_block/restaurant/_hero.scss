@@ -1,0 +1,11 @@
+.hero {
+  grid-column: hero;
+  grid-row: hero;
+  aspect-ratio: initial;
+}
+
+.test {
+  background-color: red;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}

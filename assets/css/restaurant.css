@@ -1,3 +1,24 @@
+.main-content {
+  display: grid;
+  grid-template-columns: [hero-start] 1fr [menu-start] 1fr [menu-end] 1fr [hero-end];
+  grid-template-rows: [hero-start] calc(var(--space-300-400) * 19.25) [menu-start] calc(var(--space-400) * 2) [hero-end] 1fr [menu-end];
+}
 
+.hero {
+  grid-column: hero;
+  grid-row: hero;
+  aspect-ratio: initial;
+}
+
+.test {
+  background-color: red;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.menu {
+  grid-column: menu;
+  grid-row: menu;
+}
 
 /*# sourceMappingURL=restaurant.css.map */

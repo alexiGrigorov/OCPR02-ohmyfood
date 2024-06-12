@@ -1,4 +1,4 @@
-.main-site {
+.main-content {
   --_flow-gap: var(--space-500);
 }
 
@@ -112,7 +112,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  outline: 3px solid red;
 }
 
 @media (min-width: 650px) {
