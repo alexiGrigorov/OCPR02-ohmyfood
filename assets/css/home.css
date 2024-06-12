@@ -2,6 +2,11 @@
   --_flow-gap: var(--space-500);
 }
 
+.section-header {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+}
+
 .hero {
   --flex-gap: var(--space-500);
 }
