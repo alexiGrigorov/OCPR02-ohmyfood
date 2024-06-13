@@ -78,3 +78,10 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
   background-clip: text;
   color: transparent;
 }
+
+input[type='checkbox']:not(:checked).icon-circle-check::before {
+  content: '';
+}
+input[type='checkbox']:checked.icon-circle-check::before {
+  content: '\e909';
+}

@@ -1,4 +1,72 @@
 .menu {
   grid-column: menu;
   grid-row: menu;
+  padding-block: var(--space-600);
+
+  & > * {
+    --_flow-gap: var(--space-600);
+  }
+
+  & > .name {
+    max-width: calc(var(--p-max-width) * 0.6);
+    margin-inline: auto;
+
+    & h2 {
+      font-family: var(--ff-logo);
+      font-size: var(--fs-600);
+    }
+
+    & .icon-checkbox-heart {
+      margin-inline-end: var(--space-400);
+    }
+  }
+
+  & > .meal-category {
+    & > * {
+      --_flow-gap: var(--space-300);
+    }
+
+    & h3 {
+      position: relative;
+      font-size: var(--fs-300);
+      font-weight: var(--fw-300);
+      text-transform: uppercase;
+    }
+
+    & h3::after {
+      content: '';
+      position: absolute;
+      bottom: calc(var(--space-100) * -2);
+      left: 0;
+      width: var(--space-600);
+      height: calc(var(--space-100) / 2);
+      background-color: var(--clr-information-400);
+    }
+
+    & .menu-item {
+      position: relative;
+
+      & .dish-name {
+        font-weight: var(--fw-500);
+      }
+
+      & .dish-info {
+        font-size: var(--fs-300);
+        font-weight: var(--fw-300);
+      }
+
+      & .dish-price {
+        font-size: var(--fs-300);
+        font-weight: var(--fw-700);
+        color: var(--clr-neutral-700);
+      }
+
+      & label {
+        position: absolute;
+        inset: 0;
+        display: block;
+        border: 1px solid red;
+      }
+    }
+  }
 }

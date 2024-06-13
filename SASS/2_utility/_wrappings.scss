@@ -13,3 +13,19 @@
   box-shadow: 0px var(--space-100) var(--space-400) 0px
     color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
+
+.rounded-border-300 {
+  border-radius: var(--space-300);
+}
+
+.rounded-border-400 {
+  border-radius: var(--space-400);
+}
+
+.rounded-border-500 {
+  border-radius: var(--space-500);
+}
+
+.rounded-border-600 {
+  border-radius: var(--space-600);
+}

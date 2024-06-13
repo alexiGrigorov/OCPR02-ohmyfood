@@ -1,5 +1,5 @@
 :root {
-  --maxWidth: 1240px;
+  --max-width: 1240px;
   --fs-100: clamp(0.64rem, 0.6549rem + -0.0192vi, 0.651rem);
   --fs-200: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
   --fs-300: clamp(0.9375rem, 0.9158rem + 0.1087vi, 1rem);
@@ -338,11 +338,24 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   color: transparent;
 }
 
+input[type=checkbox]:not(:checked).icon-circle-check::before {
+  content: "";
+}
+
+input[type=checkbox]:checked.icon-circle-check::before {
+  content: "\e909";
+}
+
 /************
  * Content wrapper
  ************/
 .wrapper {
-  width: min(var(--_max-wrapper-width, var(--maxWidth)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
+  width: min(var(--_max-wrapper-width, var(--max-width)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
+  margin-inline: auto;
+}
+
+.wrapper-p-width {
+  width: min(var(--_max-wrapper-width, var(--p-max-width)), 100% - var(--_inline-wrapper-padding, var(--space-300)) * 2);
   margin-inline: auto;
 }
 
@@ -368,7 +381,7 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
 
 .flex-wrapper {
   flex-direction: var(--_flex-direction, row);
-  width: min(var(--_max-wrapper-width, var(--maxWidth)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
+  width: min(var(--_max-wrapper-width, var(--max-width)), 100% - var(--_inline-wrapper-padding, var(--space-500)) * 2);
   margin-inline: auto;
 }
 
@@ -383,6 +396,12 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   flex-direction: var(--_flex-direction, row);
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-space-around {
+  flex-direction: var(--_flex-direction, row);
+  align-items: center;
+  justify-content: space-around;
 }
 
 /************
@@ -429,6 +448,22 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   box-shadow: 0px var(--space-100) var(--space-400) 0px color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
 }
 
+.rounded-border-300 {
+  border-radius: var(--space-300);
+}
+
+.rounded-border-400 {
+  border-radius: var(--space-400);
+}
+
+.rounded-border-500 {
+  border-radius: var(--space-500);
+}
+
+.rounded-border-600 {
+  border-radius: var(--space-600);
+}
+
 .hidden {
   display: none;
 }
@@ -455,7 +490,6 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border-radius: var(--space-500);
   background-color: var(--_clr-bg);
   background-image: var(--_gradient);
 }

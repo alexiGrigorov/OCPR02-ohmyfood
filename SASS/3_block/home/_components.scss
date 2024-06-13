@@ -1,5 +1,7 @@
 .main-content {
-  --_flow-gap: var(--space-500);
+  & > * {
+    --_flow-gap: var(--space-500);
+  }
 }
 
 .section-header {

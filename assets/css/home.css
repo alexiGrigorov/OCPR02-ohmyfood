@@ -1,4 +1,4 @@
-.main-content {
+.main-content > * {
   --_flow-gap: var(--space-500);
 }
 
@@ -39,7 +39,6 @@
   width: 100%;
   padding-inline: var(--space-500);
   padding-block: var(--space-400);
-  border-radius: var(--space-300);
 }
 .concept-steps > [class^=icon-] > span::before {
   color: var(--clr-neutral-500);
@@ -59,7 +58,6 @@
 
 .restaurant {
   position: relative;
-  border-radius: var(--space-400);
 }
 .restaurant > .preview {
   position: relative;

@@ -23,19 +23,33 @@
             ../assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash-756.webp   756w,
             ../assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash-1008.webp 1008w,
             ../assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash-1512.webp 1512w,
+            ../assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash-2268.webp 2268w,
             ../assets/images/restaurants/La_palette_du_goût/jay-wennington-N_Y88TWmGwA-unsplash-3024.webp 3024w
           "
           sizes="100vw"
         />
       </div>
-      <section class="menu [ bg-light | flow ]">
-        <div class="title">
+      <section class="menu [ bg-light | flow | rounded-border-600 ]">
+        <div class="name [ flex-space-between ]">
           <h2>La palette du goût</h2>
+          <form action="#">
+            <input
+              class="[ hidden ]"
+              type="checkbox"
+              id="like-la-palette-du-gout"
+            />
+            <label
+              class="[ icon-checkbox-heart ]"
+              for="like-la-palette-du-gout"
+            ></label>
+          </form>
         </div>
-        <section class="meal-category">
+        <section class="meal-category [ flow | wrapper-p-width ]">
           <h3>Entrées</h3>
-          <ul>
-            <li>
+          <ul class="category-items [ flow ]">
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Fricassée d'escargots</p>
                 <p class="dish-info">Au piment d'Espelette</p>
@@ -43,17 +57,16 @@
               <p class="dish-price">25€</p>
               <form action="#">
                 <input
-                  class="[ hidden ]"
+                  class="[ icon-circle-check | hidden ]"
                   type="checkbox"
                   id="select-fricassee-descargots"
                 />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-fricassee-descargots"
-                ></label>
+                <label for="select-fricassee-descargots"></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Foie gras de canard mi-cuit</p>
                 <p class="dish-info">Et ses copeaux de truffe noire</p>
@@ -71,7 +84,9 @@
                 ></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Œuf au plat</p>
                 <p class="dish-info">
@@ -93,10 +108,12 @@
             </li>
           </ul>
         </section>
-        <section class="meal-category">
+        <section class="meal-category [ flow | wrapper-p-width ]">
           <h3>Plats</h3>
-          <ul>
-            <li>
+          <ul class="category-items [ flow ]">
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Filet de bœuf aux herbes</p>
                 <p class="dish-info">Accompagné de sa ribambelle de légumes</p>
@@ -114,7 +131,9 @@
                 ></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Parmentier de queue de bœuf</p>
                 <p class="dish-info">
@@ -134,7 +153,9 @@
                 ></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Filet de turbot</p>
                 <p class="dish-info">Aux agrumes</p>
@@ -154,10 +175,12 @@
             </li>
           </ul>
         </section>
-        <section class="meal-category">
+        <section class="meal-category [ flow | wrapper-p-width ]">
           <h3>Desserts</h3>
-          <ul>
-            <li>
+          <ul class="category-items [ flow ]">
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Paris-Brest</p>
                 <p class="dish-info">Revisité</p>
@@ -175,7 +198,9 @@
                 ></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Macaron au chocolat d'exception</p>
                 <p class="dish-info">Et glace à la vanille de Madagascar</p>
@@ -193,7 +218,9 @@
                 ></label>
               </form>
             </li>
-            <li>
+            <li
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+            >
               <div>
                 <p class="dish-name">Mousse au chocolat</p>
                 <p class="dish-info">
@@ -215,11 +242,12 @@
             </li>
           </ul>
         </section>
-        <button class="[ main-action-button | bg-gradient | shadow ]">
+        <button
+          class="[ main-action-button | bg-gradient | shadow | rounded-border-500 ]"
+        >
           Commander
         </button>
       </section>
-      <div class="test"></div>
     </main>
     <footer class="main-footer [ bg-dark ]">
       <div class="footer-content [ flex-wrapper ]">

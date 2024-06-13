@@ -1,11 +1,19 @@
 .main-content {
   display: grid;
   grid-template-columns:
-    [hero-start] 1fr [menu-start] min(var(--maxWidth), 100%)
-    [menu-end] 1fr [hero-end];
+    [hero-start]
+    1fr
+    [menu-start]
+    min(var(--max-width), 100%)
+    [menu-end]
+    1fr
+    [hero-end];
   grid-template-rows:
-    [hero-start] calc(var(--space-300-400) * 19.25) [menu-start] calc(
-      var(--space-400) * 2
-    )
-    [hero-end] 1fr [menu-end];
+    [hero-start]
+    calc(var(--space-300-400) * 19.25 - var(--space-600))
+    [menu-start]
+    var(--space-600)
+    [hero-end]
+    1fr
+    [menu-end];
 }
