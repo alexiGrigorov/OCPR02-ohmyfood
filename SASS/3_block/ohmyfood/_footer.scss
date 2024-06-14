@@ -24,6 +24,10 @@
 
   font-size: var(--fs-300);
   font-weight: var(--fw-500);
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: breakpoints.$footer-desktop) {
