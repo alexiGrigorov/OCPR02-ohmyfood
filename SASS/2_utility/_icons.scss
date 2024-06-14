@@ -79,9 +79,21 @@ input[type='checkbox']:checked + .icon-checkbox-heart::before {
   color: transparent;
 }
 
-input[type='checkbox']:not(:checked).icon-circle-check::before {
+.icon-circle-check:has(> input[type='checkbox']:not(:checked))::before {
   content: '';
+  margin-inline-end: 0;
 }
-input[type='checkbox']:checked.icon-circle-check::before {
+
+.icon-circle-check:has(> input[type='checkbox']:checked)::before {
   content: '\e909';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 0;
+  border-start-end-radius: var(--space-400);
+  border-end-end-radius: var(--space-400);
+  width: var(--space-700);
+  height: 100%;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-information-400);
 }

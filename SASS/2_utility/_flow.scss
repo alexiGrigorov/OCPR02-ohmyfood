@@ -72,20 +72,32 @@
   justify-content: center;
 }
 
+.flex-end {
+  // --_flex-direction: row;
+  // --_flex-align: center;
+
+  flex-direction: var(--_flex-direction, row);
+  align-items: var(--_flex-align, center);
+  justify-content: flex-end;
+}
+
 .flex-space-between {
+  // --_flex-direction: row;
   // --_flex-direction: row;
   --_flex-gap: normal;
 
   flex-direction: var(--_flex-direction, row);
-  align-items: center;
+  align-items: var(--_flex-align, center);
   justify-content: space-between;
 }
 
 .flex-space-around {
   // --_flex-direction: row;
+  // --_flex-align: center;
+  --_flex-gap: normal;
 
   flex-direction: var(--_flex-direction, row);
-  align-items: center;
+  align-items: var(--_flex-align, center);
   justify-content: space-around;
 }
 

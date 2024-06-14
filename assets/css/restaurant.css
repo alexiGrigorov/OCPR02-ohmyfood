@@ -54,24 +54,33 @@
 }
 .menu > .meal-category .menu-item {
   position: relative;
+  --_flex-align: stretch;
 }
-.menu > .meal-category .menu-item .dish-name {
+.menu > .meal-category .menu-item > .left {
+  padding-inline: var(--space-300);
+  padding-block: var(--space-200);
+}
+.menu > .meal-category .menu-item > .left .dish-name {
   font-weight: var(--fw-500);
 }
-.menu > .meal-category .menu-item .dish-info {
+.menu > .meal-category .menu-item > .left .dish-info {
   font-size: var(--fs-300);
   font-weight: var(--fw-300);
 }
-.menu > .meal-category .menu-item .dish-price {
+.menu > .meal-category .menu-item > .right {
+  --_flex-align: stretch;
+}
+.menu > .meal-category .menu-item > .right .dish-price {
+  align-self: flex-end;
+  padding: var(--space-200);
   font-size: var(--fs-300);
   font-weight: var(--fw-700);
   color: var(--clr-neutral-700);
 }
-.menu > .meal-category .menu-item label {
+.menu > .meal-category .menu-item > .right label {
+  --_flex-gap: 0;
   position: absolute;
   inset: 0;
-  display: block;
-  border: 1px solid red;
 }
 
 /*# sourceMappingURL=restaurant.css.map */

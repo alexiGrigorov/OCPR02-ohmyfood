@@ -45,27 +45,38 @@
 
     & .menu-item {
       position: relative;
+      --_flex-align: stretch;
 
-      & .dish-name {
-        font-weight: var(--fw-500);
+      & > .left {
+        padding-inline: var(--space-300);
+        padding-block: var(--space-200);
+        & .dish-name {
+          font-weight: var(--fw-500);
+        }
+
+        & .dish-info {
+          font-size: var(--fs-300);
+          font-weight: var(--fw-300);
+        }
       }
 
-      & .dish-info {
-        font-size: var(--fs-300);
-        font-weight: var(--fw-300);
-      }
+      & > .right {
+        --_flex-align: stretch;
 
-      & .dish-price {
-        font-size: var(--fs-300);
-        font-weight: var(--fw-700);
-        color: var(--clr-neutral-700);
-      }
+        & .dish-price {
+          align-self: flex-end;
+          padding: var(--space-200);
+          font-size: var(--fs-300);
+          font-weight: var(--fw-700);
+          color: var(--clr-neutral-700);
+        }
 
-      & label {
-        position: absolute;
-        inset: 0;
-        display: block;
-        border: 1px solid red;
+        & label {
+          --_flex-gap: 0;
+
+          position: absolute;
+          inset: 0;
+        }
       }
     }
   }
