@@ -38,16 +38,15 @@
   --_flow-gap: var(--space-300);
 }
 .menu > .meal-category h3 {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
   font-size: var(--fs-300);
   font-weight: var(--fw-300);
   text-transform: uppercase;
 }
 .menu > .meal-category h3::after {
   content: "";
-  position: absolute;
-  bottom: calc(var(--space-100) * -2);
-  left: 0;
   width: var(--space-600);
   height: calc(var(--space-100) / 2);
   background-color: var(--clr-information-400);
