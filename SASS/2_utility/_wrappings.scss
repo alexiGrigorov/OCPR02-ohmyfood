@@ -9,9 +9,23 @@
   box-shadow: 0 var(--space-200) var(--space-300) 0 var(--clr-neutral-700);
 }
 
-.shadow {
-  box-shadow: 0px var(--space-100) var(--space-400) 0px
+.shadow-300 {
+  // shadow on main action button
+  box-shadow: 0px var(--space-100) var(--space-200) 0px
+    color-mix(in srgb, var(--clr-neutral-900), transparent 75%);
+}
+
+.shadow-400 {
+  // shadow on concept
+  box-shadow: 0px var(--space-100) var(--space-300) 0px
     color-mix(in srgb, var(--clr-neutral-900), transparent 85%);
+}
+
+.shadow-500 {
+  // shadow on menu-item
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px var(--space-100) var(--space-300) 0px
+    color-mix(in srgb, var(--clr-neutral-900), transparent 90%);
 }
 
 .rounded-border-300 {

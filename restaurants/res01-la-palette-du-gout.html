@@ -30,7 +30,7 @@
         />
       </div>
       <section class="menu [ bg-light | flow | rounded-border-600 ]">
-        <div class="name [ flex-space-between ]">
+        <div class="name [ flex-space-between | wrapper-p-width ]">
           <h2>La palette du goût</h2>
           <form action="#">
             <input
@@ -48,7 +48,7 @@
           <h3>Entrées</h3>
           <ul class="category-items [ flow ]">
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
               <div class="left">
                 <p class="dish-name">Fricassée d'escargots</p>
@@ -63,46 +63,36 @@
               </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Foie gras de canard mi-cuit</p>
                 <p class="dish-info">Et ses copeaux de truffe noire</p>
               </div>
-              <p class="dish-price">35€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-foie-gras-de-canard-mi-cuit"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-foie-gras-de-canard-mi-cuit"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">35€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010102" />
+                  <label for="d_010102"></label>
+                </form>
+              </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Œuf au plat</p>
                 <p class="dish-info">
                   Assaisonné à la truffe sur lit de caviar
                 </p>
               </div>
-              <p class="dish-price">20€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-oeuf-au-plat"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-oeuf-au-plat"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">20€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010103" />
+                  <label for="d_010103"></label>
+                </form>
+              </div>
             </li>
           </ul>
         </section>
@@ -110,66 +100,51 @@
           <h3>Plats</h3>
           <ul class="category-items [ flow ]">
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Filet de bœuf aux herbes</p>
                 <p class="dish-info">Accompagné de sa ribambelle de légumes</p>
               </div>
-              <p class="dish-price">40€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-filet-de-boeuf-aux-herbes"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-filet-de-boeuf-aux-herbes"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">40€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010201" />
+                  <label for="d_010201"></label>
+                </form>
+              </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Parmentier de queue de bœuf</p>
                 <p class="dish-info">
                   À la truffe noire sur sa purée de panais
                 </p>
               </div>
-              <p class="dish-price">35€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-parmentier-de-queue-de-boeuf"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-parmentier-de-queue-de-boeuf"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">35€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010202" />
+                  <label for="d_010202"></label>
+                </form>
+              </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Filet de turbot</p>
                 <p class="dish-info">Aux agrumes</p>
               </div>
-              <p class="dish-price">44€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-filet-de-turbot"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-filet-de-turbot"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">44€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010203" />
+                  <label for="d_010203"></label>
+                </form>
+              </div>
             </li>
           </ul>
         </section>
@@ -177,74 +152,61 @@
           <h3>Desserts</h3>
           <ul class="category-items [ flow ]">
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Paris-Brest</p>
                 <p class="dish-info">Revisité</p>
               </div>
-              <p class="dish-price">18€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-paris-brest"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-paris-brest"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">18€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010301" />
+                  <label for="d_010301"></label>
+                </form>
+              </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Macaron au chocolat d'exception</p>
                 <p class="dish-info">Et glace à la vanille de Madagascar</p>
               </div>
-              <p class="dish-price">22€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-macaron-au-chocolat-dexception"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-macaron-au-chocolat-dexception"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">22€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010302" />
+                  <label for="d_010302"></label>
+                </form>
+              </div>
             </li>
             <li
-              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 ]"
+              class="menu-item [ flex-space-between | bg-clear | rounded-border-400 | shadow-500 ]"
             >
-              <div>
+              <div class="left">
                 <p class="dish-name">Mousse au chocolat</p>
                 <p class="dish-info">
                   Au piment d'Espelette et à la truffe noire
                 </p>
               </div>
-              <p class="dish-price">23€</p>
-              <form action="#">
-                <input
-                  class="[ hidden ]"
-                  type="checkbox"
-                  id="select-mousse-au-chocolat"
-                />
-                <label
-                  class="[ icon-circle-check ]"
-                  for="select-mousse-au-chocolat"
-                ></label>
-              </form>
+              <div class="right [ flex-end ]">
+                <p class="dish-price">23€</p>
+                <form class="[ icon-circle-check ]" action="#">
+                  <input class="[ hidden ]" type="checkbox" id="d_010303" />
+                  <label for="d_010303"></label>
+                </form>
+              </div>
             </li>
           </ul>
         </section>
-        <button
-          class="[ main-action-button | bg-gradient | shadow | rounded-border-500 ]"
-        >
-          Commander
-        </button>
+        <div class="[ flex-center ]">
+          <button
+            class="[ main-action-button | bg-gradient | shadow-300 | rounded-border-500 ]"
+          >
+            Commander
+          </button>
+        </div>
       </section>
     </main>
     <footer class="main-footer [ bg-dark ]">

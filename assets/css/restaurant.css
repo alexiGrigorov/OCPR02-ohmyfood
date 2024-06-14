@@ -57,15 +57,22 @@
   --_flex-align: stretch;
 }
 .menu > .meal-category .menu-item > .left {
+  min-width: 0;
   padding-inline: var(--space-300);
   padding-block: var(--space-200);
 }
 .menu > .meal-category .menu-item > .left .dish-name {
   font-weight: var(--fw-500);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu > .meal-category .menu-item > .left .dish-info {
   font-size: var(--fs-300);
   font-weight: var(--fw-300);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu > .meal-category .menu-item > .right {
   --_flex-align: stretch;
@@ -81,6 +88,10 @@
   --_flex-gap: 0;
   position: absolute;
   inset: 0;
+}
+.menu .main-action-button {
+  padding-block: var(--space-300);
+  padding-inline: var(--space-600);
 }
 
 /*# sourceMappingURL=restaurant.css.map */
