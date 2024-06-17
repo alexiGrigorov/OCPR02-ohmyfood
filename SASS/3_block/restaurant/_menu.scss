@@ -78,6 +78,34 @@
           color: var(--clr-neutral-700);
         }
 
+        // Item select icon
+        & .icon-circle-check:has(> input[type='checkbox'])::before {
+          margin-inline-end: 0;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 200ms ease-out;
+        }
+        &
+          .icon-circle-check:has(
+            > input[type='checkbox']:not(:checked)
+          )::before {
+          content: '';
+        }
+
+        & .icon-circle-check:has(> input[type='checkbox']:checked)::before {
+          content: '\e909';
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-start-end-radius: var(--space-400);
+          border-end-end-radius: var(--space-400);
+          width: var(--space-700);
+          height: 100%;
+          color: var(--clr-neutral-100);
+          background-color: var(--clr-information-400);
+          transform: scaleX(1);
+        }
+
         & label {
           --_flex-gap: 0;
 

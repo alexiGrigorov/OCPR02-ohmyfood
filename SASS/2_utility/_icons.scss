@@ -1,5 +1,7 @@
 [class^='icon-']::before,
-[class*=' icon-']::before {
+[class*=' icon-']::before,
+[class^='icon-']::after,
+[class*=' icon-']::after {
   display: inline-block;
   color: inherit;
   font-family: var(--ff-icons) !important;
@@ -67,33 +69,4 @@
 }
 .icon-circle-3:before {
   content: '\e912';
-}
-
-input[type='checkbox']:not(:checked) + .icon-checkbox-heart::before {
-  content: '\e903';
-}
-input[type='checkbox']:checked + .icon-checkbox-heart::before {
-  content: '\e902';
-  background-image: var(--gradient-primary-400);
-  background-clip: text;
-  color: transparent;
-}
-
-.icon-circle-check:has(> input[type='checkbox']:not(:checked))::before {
-  content: '';
-  margin-inline-end: 0;
-}
-
-.icon-circle-check:has(> input[type='checkbox']:checked)::before {
-  content: '\e909';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-inline-end: 0;
-  border-start-end-radius: var(--space-400);
-  border-end-end-radius: var(--space-400);
-  width: var(--space-700);
-  height: 100%;
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-information-400);
 }

@@ -1,23 +1,54 @@
-.main-action-button {
-  --clr-primary-gradient-400: linear-gradient(
-    180deg,
-    var(--clr-scheme-1) 0%,
-    var(--clr-scheme-2) 100%
-  );
+// Main action button
 
+.main-action-button {
   display: inline-block;
   border-style: none;
   padding-inline: var(--space-400);
   padding-block: var(--space-300);
   font-size: var(--fs-300);
   font-weight: var(--fw-500);
-  color: var(--_clr-txt);
+  color: var(--clr-neutral-100);
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background-color: var(--_clr-bg);
-  background-image: var(--_gradient);
+  background-color: var(--clr-scheme-1);
+  background-image: var(--gradient-primary-700);
+  transition: filter 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.main-action-button:hover {
+  filter: brightness(1.15);
+}
+
+// Like icon
+input[type='checkbox'] + .icon-checkbox-heart {
+  position: relative;
+}
+
+input[type='checkbox'] + .icon-checkbox-heart::before {
+  position: relative;
+  z-index: 2;
+  content: '\e902';
+  background-image: var(--gradient-primary-400);
+  background-size: 100% 0;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  color: transparent;
+  transition: background-size 100ms linear;
+}
+
+input[type='checkbox'] + .icon-checkbox-heart::after {
+  content: '\e903';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+input[type='checkbox']:checked + .icon-checkbox-heart::before {
+  background-size: 100% 100%;
 }
