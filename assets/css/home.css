@@ -1,3 +1,100 @@
+.loader-screen {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  animation: remove-loader 0ms 2s forwards;
+}
+
+@keyframes remove-loader {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/* Parameters */
+/* Mixins */
+/* Animations */
+.spin {
+  animation: spin 750ms infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rspin {
+  animation: rspin(2250ms) infinite linear;
+}
+
+@keyframes rspin {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+/* Styles */
+.loader {
+  background-color: var(--clr-accent-400);
+  border-radius: 100%;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+}
+.loader .c {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -34% 0 0 -34%;
+  width: 68%;
+  height: 68%;
+  background-color: var(--_clr-bg);
+  border-radius: 100%;
+  z-index: 3;
+}
+.loader .d {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.loader .d .e {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  margin: 0 0 0 -6px;
+  height: 14px;
+  width: 12px;
+  transform: rotate(10deg) skew(20deg);
+  border-radius: 3px;
+  background: var(--clr-accent-700);
+}
+.loader .r {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  bottom: -1px;
+  margin-left: -3px;
+  background-color: var(--_clr-bg);
+  width: 6px;
+}
+.loader .r1 {
+  transform: rotate(0deg);
+}
+.loader .r2 {
+  transform: rotate(45deg);
+}
+.loader .r3 {
+  transform: rotate(90deg);
+}
+.loader .r4 {
+  transform: rotate(135deg);
+}
+
 .main-content > * {
   --_flow-gap: var(--space-500);
 }
