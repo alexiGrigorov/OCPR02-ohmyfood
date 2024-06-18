@@ -121,3 +121,29 @@
     padding-inline: var(--space-600);
   }
 }
+
+@for $i from 1 through 5 {
+  .meal-category:nth-child(#{$i}) {
+    animation-delay: #{$i * 250}ms;
+  }
+}
+
+.meal-category {
+  animation: FadeIn 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

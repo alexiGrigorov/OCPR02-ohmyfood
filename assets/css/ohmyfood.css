@@ -534,6 +534,10 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   transform: translate(var(--space-300-500), -50%);
 }
 
+.header-back-btn:hover {
+  animation: shakeX 1s linear;
+}
+
 .header-logo {
   margin-inline: auto;
   padding-block: var(--space-300-500);
@@ -552,6 +556,17 @@ input[type=checkbox]:checked + .icon-checkbox-heart::before {
   margin-inline-end: var(--space-400);
 }
 
+@keyframes shakeX {
+  from, to {
+    transform: translate(var(--space-300-500), -50%);
+  }
+  10%, 50%, 90% {
+    transform: translate(calc(var(--space-300-500) - 10px), -50%);
+  }
+  30%, 70% {
+    transform: translate(calc(var(--space-300-500) + 10px), -50%);
+  }
+}
 .main-footer {
   padding-block-start: var(--space-500-700);
   padding-block-end: var(--space-500);

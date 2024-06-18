@@ -12,6 +12,10 @@
   transform: translate(var(--space-300-500), -50%);
 }
 
+.header-back-btn:hover {
+  animation: shakeX 1s linear;
+}
+
 .header-logo {
   margin-inline: auto;
   padding-block: var(--space-300-500);
@@ -33,5 +37,23 @@
 
   & p::before {
     margin-inline-end: var(--space-400);
+  }
+}
+
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate(var(--space-300-500), -50%);
+  }
+
+  10%,
+  50%,
+  90% {
+    transform: translate(calc(var(--space-300-500) - 10px), -50%);
+  }
+
+  30%,
+  70% {
+    transform: translate(calc(var(--space-300-500) + 10px), -50%);
   }
 }
