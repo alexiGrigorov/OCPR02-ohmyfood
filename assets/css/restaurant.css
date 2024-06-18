@@ -135,6 +135,7 @@
 }
 
 .meal-category {
+  opacity: 0;
   animation: FadeIn 1s linear;
   animation-fill-mode: forwards;
 }
@@ -149,6 +150,7 @@
     transform: scale(1.05);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
