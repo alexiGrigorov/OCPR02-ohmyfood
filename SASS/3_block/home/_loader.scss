@@ -19,7 +19,7 @@ $loaderSize: 60px;
 $radThickness: $loaderSize / 10;
 $spinSpeed: 750ms;
 $backgroundColor: var(--clr-accent-400);
-$forgroundColor: var(--clr-accent-700);
+$foregroundColor: var(--clr-accent-700);
 $masksColor: var(--_clr-bg);
 $middleCircleSize: 68%;
 
@@ -85,7 +85,7 @@ $middleCircleSize: 68%;
       width: $thisWidth;
       transform: rotate(10deg) skew(20deg);
       border-radius: 3px;
-      background: $forgroundColor;
+      background: $foregroundColor;
     }
   }
 
