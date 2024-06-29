@@ -1,7 +1,7 @@
 [class^='bg-'],
 [class*=' bg-'] {
-  background-color: var(--_clr-bg, red);
-  color: var(--_clr-txt, red);
+  background-color: var(--_clr-bg, #fff);
+  color: var(--_clr-txt, #000);
   background-image: var(--_gradient);
 }
 

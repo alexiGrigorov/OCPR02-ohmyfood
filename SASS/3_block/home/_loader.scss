@@ -39,7 +39,7 @@ $middleCircleSize: 68%;
 }
 
 .rspin {
-  @include animation(rspin($spinSpeed * 3) infinite linear);
+  @include animation(rspin ($spinSpeed * 3) infinite linear);
 }
 @keyframes rspin {
   to {

@@ -26,7 +26,7 @@
   }
 }
 .rspin {
-  animation: rspin(2250ms) infinite linear;
+  animation: rspin 2250ms infinite linear;
 }
 
 @keyframes rspin {
